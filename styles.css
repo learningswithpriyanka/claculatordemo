@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to right, pink, blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 50px;
+  height: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.row {
+  display: flex;
+}
+.row > .span {
+  flex: 2;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(192, 210, 30);
+  min-height: 75px;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output .p-operand {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.output .c-operand {
+  color: white;
+  font-size: 2.5rem;
+  text-align: right;
+}
